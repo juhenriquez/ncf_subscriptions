@@ -6,7 +6,7 @@
             <field name="model">sale.subscription</field>
             <field name="inherit_id" ref="sale_subscription.sale_subscription_view_form"/>
             <field name="arch" type="xml">
-                <xpath expr="//group[@name='main']/group[1]/div" position="after">
+                <xpath expr="//group[@name='main']/group[1]" position="after">
                   <field name="sale_fiscal_type" attrs="{'invisible':[('ncf_control', '=', False)]}"/>
                   <field name="ncf_control" attrs="{'invisible':True}"/>
                 </xpath>
